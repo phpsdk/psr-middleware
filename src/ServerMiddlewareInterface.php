@@ -5,7 +5,7 @@ namespace Psr\Http\Middleware;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-interface ServerMiddlewareInterface
+interface ServerMiddlewareInterface extends MiddlewareInterface
 {
     /**
      * Process a server request and return a response.
