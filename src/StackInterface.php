@@ -18,7 +18,7 @@ interface StackInterface
      *
      * @return self
      */
-    public function withMiddleware(MiddlewareInterface $middleware): self;
+    public function withMiddleware(MiddlewareInterface $middleware);
 
     /**
      * Return an instance without the specified middleware.
@@ -31,7 +31,7 @@ interface StackInterface
      *
      * @return self
      */
-    public function withoutMiddleware(MiddlewareInterface $middleware): self;
+    public function withoutMiddleware(MiddlewareInterface $middleware);
 
     /**
      * Process the request through middleware and return the response.
@@ -43,5 +43,5 @@ interface StackInterface
      *
      * @return ResponseInterface
      */
-    public function process(RequestInterface $request): ResponseInterface;
+    public function process(RequestInterface $request);
 }

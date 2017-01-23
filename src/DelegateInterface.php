@@ -14,5 +14,5 @@ interface DelegateInterface
      *
      * @return ResponseInterface
      */
-    public function next(RequestInterface $request): ResponseInterface;
+    public function next(RequestInterface $request);
 }
